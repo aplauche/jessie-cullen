@@ -120,16 +120,26 @@ svg {
 }
 
 path {
-  /* fill: #f9868d; */
   transform: scale(0);
   transition: transform 4s;
-  /* animation: blob 5s 2s both; */
 }
 
 g.blob.in-view path {
   transform: scale(1.1);
 }
 
-path.blob-2 {
-  /* animation: blob 5s 2.5s both; */
+::-webkit-scrollbar {
+  width: 8px;
+  background: linear-gradient(180deg, white, #f9868d, #8652ff, #ff4141, white);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+img.arrow {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
 }
